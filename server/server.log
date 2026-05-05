@@ -1,0 +1,54 @@
+{"level":30,"time":1777931463709,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","msg":"Server listening at http://0.0.0.0:3001"}
+Server is running on port 3001
+Client connected: ZxY2m9y-58IQvYLTAAAC
+Client connected: 1rgL2Pirgdfm1bk7AAAD
+{"level":30,"time":1777931464642,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-1","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49639},"msg":"incoming request"}
+{"level":30,"time":1777931464643,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-1","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931464643,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-1","res":{"statusCode":404},"responseTime":0.9073329567909241,"msg":"request completed"}
+{"level":30,"time":1777931465668,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-2","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49644},"msg":"incoming request"}
+{"level":30,"time":1777931465668,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-2","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931465668,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-2","res":{"statusCode":404},"responseTime":0.5222499966621399,"msg":"request completed"}
+Client connected: Ek78CBflK5TGDcM1AAAF
+{"level":30,"time":1777931466694,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-3","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49657},"msg":"incoming request"}
+{"level":30,"time":1777931466694,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-3","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931466694,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-3","res":{"statusCode":404},"responseTime":0.2649589776992798,"msg":"request completed"}
+{"level":30,"time":1777931467721,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-4","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49662},"msg":"incoming request"}
+{"level":30,"time":1777931467721,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-4","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931467721,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-4","res":{"statusCode":404},"responseTime":0.25141698122024536,"msg":"request completed"}
+{"level":30,"time":1777931468747,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-5","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49667},"msg":"incoming request"}
+{"level":30,"time":1777931468748,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-5","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931468748,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-5","res":{"statusCode":404},"responseTime":0.3215000033378601,"msg":"request completed"}
+{"level":30,"time":1777931469772,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-6","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49672},"msg":"incoming request"}
+{"level":30,"time":1777931469772,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-6","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931469773,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-6","res":{"statusCode":404},"responseTime":0.2555839419364929,"msg":"request completed"}
+{"level":30,"time":1777931470795,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-7","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49677},"msg":"incoming request"}
+{"level":30,"time":1777931470795,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-7","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931470795,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-7","res":{"statusCode":404},"responseTime":0.421625018119812,"msg":"request completed"}
+{"level":30,"time":1777931471818,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-8","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49683},"msg":"incoming request"}
+{"level":30,"time":1777931471818,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-8","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931471818,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-8","res":{"statusCode":404},"responseTime":0.23295795917510986,"msg":"request completed"}
+{"level":30,"time":1777931472840,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-9","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49688},"msg":"incoming request"}
+{"level":30,"time":1777931472840,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-9","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931472841,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-9","res":{"statusCode":404},"responseTime":0.4034169912338257,"msg":"request completed"}
+{"level":30,"time":1777931473863,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-a","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49693},"msg":"incoming request"}
+{"level":30,"time":1777931473864,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-a","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931473864,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-a","res":{"statusCode":404},"responseTime":0.3952910304069519,"msg":"request completed"}
+{"level":30,"time":1777931474888,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-b","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49698},"msg":"incoming request"}
+{"level":30,"time":1777931474888,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-b","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931474888,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-b","res":{"statusCode":404},"responseTime":0.2467079758644104,"msg":"request completed"}
+{"level":30,"time":1777931475908,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-c","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49703},"msg":"incoming request"}
+{"level":30,"time":1777931475908,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-c","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931475908,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-c","res":{"statusCode":404},"responseTime":0.3565419912338257,"msg":"request completed"}
+{"level":30,"time":1777931476935,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-d","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49710},"msg":"incoming request"}
+{"level":30,"time":1777931476935,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-d","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931476935,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-d","res":{"statusCode":404},"responseTime":0.2409999966621399,"msg":"request completed"}
+{"level":30,"time":1777931477958,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-e","req":{"method":"GET","url":"/health","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49715},"msg":"incoming request"}
+{"level":30,"time":1777931477958,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-e","msg":"Route GET:/health not found"}
+{"level":30,"time":1777931477958,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-e","res":{"statusCode":404},"responseTime":0.25862497091293335,"msg":"request completed"}
+{"level":30,"time":1777931499224,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-f","req":{"method":"GET","url":"/","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49808},"msg":"incoming request"}
+{"level":30,"time":1777931499224,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-f","res":{"statusCode":200},"responseTime":0.25700002908706665,"msg":"request completed"}
+{"level":30,"time":1777931499232,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-g","req":{"method":"GET","url":"/api/users","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":49809},"msg":"incoming request"}
+{"level":30,"time":1777931499240,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-g","res":{"statusCode":200},"responseTime":7.500249981880188,"msg":"request completed"}
+{"level":30,"time":1777931547340,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-h","req":{"method":"POST","url":"/api/messages","hostname":"127.0.0.1:3001","remoteAddress":"127.0.0.1","remotePort":50031},"msg":"incoming request"}
+[translate] Empty result for ru→es: "This is a test message for translation." - returning original text
+{"level":30,"time":1777931556495,"pid":24427,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-h","res":{"statusCode":200},"responseTime":9154.935916006565,"msg":"request completed"}

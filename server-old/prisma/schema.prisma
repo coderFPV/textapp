@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String    @id @default(uuid())
+  role              String    @default("USER")
+  name              String
+  username          String    @unique
+  email             String    @unique
+  passwordHash      String
+  preferredLanguage String    @default("en")
+  createdAt         DateTime  @default(now())
+  receivedMessages  Message[] @relation("ReceivedMessages")
+  sentMessages      Message[] @relation("SentMessages")
+}
+
+model Message {
+  id              String   @id @default(uuid())
+  chatId          String
+  position        Int
+  translatingRole String?
+  senderId        String
+  receiverId      String
+  originalText    String
+  translations    Json?    @default("{}")
+  createdAt       DateTime @default(now())
+  senderLanguage  String?    @default("en")
+  receiver        User     @relation("ReceivedMessages", fields: [receiverId], references: [id])
+  sender          User     @relation("SentMessages", fields: [senderId], references: [id])
+}

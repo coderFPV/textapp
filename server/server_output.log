@@ -1,0 +1,381 @@
+{"level":30,"time":1777880514042,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","msg":"Server listening at http://0.0.0.0:3001"}
+Server is running on port 3001
+Client connected: rfhlwtcH9lMJewO2AAAB
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 0 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Sent 0 historical messages to me-id.
+Client connected: y2V7U5uv0qKK4auCAAAD
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 0 historical messages to me-id.
+Sent 0 historical messages to me-id.
+Client connected: aPoGhYmrDcPFXHiiAAAH
+Client connected: OAFdMH_yJEiE6vY7AAAI
+Client connected: _aa2RWRyfyK6p5UbAAAJ
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+{"level":30,"time":1777880517633,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-1","req":{"method":"GET","url":"/api/users/me","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":51783},"msg":"incoming request"}
+{"level":30,"time":1777880517633,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-1","msg":"Route GET:/api/users/me not found"}
+{"level":30,"time":1777880517635,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-1","res":{"statusCode":404},"responseTime":1.5815839767456055,"msg":"request completed"}
+Client disconnected: rfhlwtcH9lMJewO2AAAB
+User me-id disconnected.
+Client connected: FhYiGHdCyMWjxIHPAAAL
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Client disconnected: FhYiGHdCyMWjxIHPAAAL
+User me-id disconnected.
+Client connected: JiNPd_UsKNonDu2VAAAN
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+{"level":30,"time":1777880549436,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-2","req":{"method":"PUT","url":"/api/users/me-id","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":52062},"msg":"incoming request"}
+{"level":30,"time":1777880549441,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-2","res":{"statusCode":200},"responseTime":5.558042049407959,"msg":"request completed"}
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Client disconnected: JiNPd_UsKNonDu2VAAAN
+User me-id disconnected.
+Client connected: qndLwWTortUtxoDpAAAP
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+{"level":30,"time":1777880657299,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-3","req":{"method":"PUT","url":"/api/users/me-id","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":52972},"msg":"incoming request"}
+{"level":30,"time":1777880657303,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-3","res":{"statusCode":200},"responseTime":3.4394590258598328,"msg":"request completed"}
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Client disconnected: qndLwWTortUtxoDpAAAP
+User me-id disconnected.
+Client disconnected: _aa2RWRyfyK6p5UbAAAJ
+Client disconnected: y2V7U5uv0qKK4auCAAAD
+Client disconnected: OAFdMH_yJEiE6vY7AAAI
+Client disconnected: aPoGhYmrDcPFXHiiAAAH
+Client connected: ThCNhoAn29aZcR2MAAAR
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+{"level":30,"time":1777880820491,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-4","req":{"method":"PUT","url":"/api/users/me-id","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":54535},"msg":"incoming request"}
+{"level":30,"time":1777880820497,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-4","res":{"statusCode":200},"responseTime":5.791499972343445,"msg":"request completed"}
+Client connected: 8eSQZG0bXC0NZZcCAAAT
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Client connected: 3ubxB9Kr294wM7WNAAAV
+User me-id joined their room.
+Client connected: vavsbQqatINUifrNAAAX
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client connected: wQVwqlevo9JRjnIPAAAZ
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 0 historical messages to me-id.
+Sent 0 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 0 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 1 historical messages to me-id.
+Sent 1 historical messages to me-id.
+Client disconnected: ThCNhoAn29aZcR2MAAAR
+User me-id disconnected.
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client disconnected: 8eSQZG0bXC0NZZcCAAAT
+User me-id disconnected.
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client disconnected: 3ubxB9Kr294wM7WNAAAV
+User me-id disconnected.
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client disconnected: vavsbQqatINUifrNAAAX
+User me-id disconnected.
+Client disconnected: wQVwqlevo9JRjnIPAAAZ
+User me-id disconnected.
+Client connected: jjUcuv9KUMUsG2-ZAAAb
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client connected: hwSKLpjV4QHLmqn7AAAd
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client connected: bDhDyWIZvuR-a4NxAAAf
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client connected: 6wqTSlwQZePia37GAAAh
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client connected: MsmD3xctKdXzT5NxAAAj
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined their room.
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Sent 5 historical messages to me-id.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client disconnected: hwSKLpjV4QHLmqn7AAAd
+User me-id disconnected.
+Client connected: PdpTQZyXx11tBkZmAAAl
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Client disconnected: PdpTQZyXx11tBkZmAAAl
+User me-id disconnected.
+Client connected: PhOQQN_VHI8OlZh0AAAn
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Client disconnected: PhOQQN_VHI8OlZh0AAAn
+User me-id disconnected.
+Client connected: xwXII3P3MY6xigOmAAAp
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+Client disconnected: xwXII3P3MY6xigOmAAAp
+User me-id disconnected.
+Client connected: 1G-vC4KOI_2lj8UNAAAr
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Client disconnected: 1G-vC4KOI_2lj8UNAAAr
+User me-id disconnected.
+Client connected: zbpSnsSinnVXmwPxAAAt
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+{"level":30,"time":1777881218865,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-5","req":{"method":"PUT","url":"/api/users/me-id","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":58013},"msg":"incoming request"}
+{"level":30,"time":1777881218869,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-5","res":{"statusCode":200},"responseTime":4.573915958404541,"msg":"request completed"}
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Client disconnected: zbpSnsSinnVXmwPxAAAt
+User me-id disconnected.
+Client connected: l0X0qv-WeW6mxbv3AAAv
+User me-id joined their room.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+{"level":30,"time":1777881385488,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-6","req":{"method":"PUT","url":"/api/users/me-id","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":59426},"msg":"incoming request"}
+{"level":30,"time":1777881385491,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-6","res":{"statusCode":200},"responseTime":2.8208329677581787,"msg":"request completed"}
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 4 historical messages to me-id.
+Sent 4 historical messages to me-id.
+Translation Error: Error: Failed to get valid text from AI response
+    at translate (/Users/daniilmotsenyat/code/textapp/server/src/services/translationService.ts:142:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Socket.<anonymous> (/Users/daniilmotsenyat/code/textapp/server/src/services/socketService.ts:121:34)
+Message from me-id to user1: how are you?
+Client disconnected: MsmD3xctKdXzT5NxAAAj
+User me-id disconnected.
+Client disconnected: bDhDyWIZvuR-a4NxAAAf
+User me-id disconnected.
+Client disconnected: jjUcuv9KUMUsG2-ZAAAb
+User me-id disconnected.
+Client disconnected: 6wqTSlwQZePia37GAAAh
+User me-id disconnected.
+Client disconnected: l0X0qv-WeW6mxbv3AAAv
+User me-id disconnected.
+Client connected: 00uNHfJsBuaBFIa1AAAy
+Client connected: vW2GWjzsry389nL-AAA0
+Client connected: Fc11g00gcetxgxybAAA1
+Client connected: Ipb8PjsIEx39lN-NAAA4
+Client connected: aAdy3mMnznFC0iagAAA5
+Client disconnected: aAdy3mMnznFC0iagAAA5
+Client disconnected: 00uNHfJsBuaBFIa1AAAy
+Client disconnected: vW2GWjzsry389nL-AAA0
+Client disconnected: Fc11g00gcetxgxybAAA1
+Client disconnected: Ipb8PjsIEx39lN-NAAA4
+Client connected: vGMhg57X788Eozq_AAA8
+Client connected: cswMVgHHcO4LbHZdAAA9
+Client connected: a9rT-OV2XLL5rG16AABB
+Client connected: iw6W2LVKCKId4UKsAABC
+Client connected: x8DoF6FPNd2N-_VSAABD
+Client disconnected: a9rT-OV2XLL5rG16AABB
+Client disconnected: vGMhg57X788Eozq_AAA8
+Client disconnected: cswMVgHHcO4LbHZdAAA9
+Client disconnected: iw6W2LVKCKId4UKsAABC
+{"level":30,"time":1777928023898,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-7","req":{"method":"GET","url":"/","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":50474},"msg":"incoming request"}
+{"level":30,"time":1777928023899,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-7","res":{"statusCode":200},"responseTime":0.44933295249938965,"msg":"request completed"}
+{"level":30,"time":1777928023916,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-8","req":{"method":"GET","url":"/favicon.ico","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":50474},"msg":"incoming request"}
+{"level":30,"time":1777928023916,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-8","msg":"Route GET:/favicon.ico not found"}
+{"level":30,"time":1777928023917,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-8","res":{"statusCode":404},"responseTime":0.2722499966621399,"msg":"request completed"}
+Client connected: jaS8zaH3y4HTlN9HAABF
+User me-id joined their room.
+Sent 6 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 5 historical messages to me-id.
+Sent 5 historical messages to me-id.
+{"level":30,"time":1777928032141,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-9","req":{"method":"PUT","url":"/api/users/me-id","hostname":"localhost:3001","remoteAddress":"127.0.0.1","remotePort":50527},"msg":"incoming request"}
+{"level":30,"time":1777928032149,"pid":8198,"hostname":"Daniils-MacBook-Pro.local","reqId":"req-9","res":{"statusCode":200},"responseTime":8.035957992076874,"msg":"request completed"}
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 5 historical messages to me-id.
+Sent 5 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 0 historical messages to me-id.
+Sent 0 historical messages to me-id.
+Message from me-id to user2: hey
+Message from me-id to user2: how are you?
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 0 historical messages to me-id.
+Sent 0 historical messages to me-id.
+Translation Error: Error: Failed to get valid text from AI response
+    at translate (/Users/daniilmotsenyat/code/textapp/server/src/services/translationService.ts:142:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Socket.<anonymous> (/Users/daniilmotsenyat/code/textapp/server/src/services/socketService.ts:121:34)
+Message from me-id to user3: whats up?
+Message from me-id to user3: hello
+Translation Error: Error: Failed to get valid text from AI response
+    at translate (/Users/daniilmotsenyat/code/textapp/server/src/services/translationService.ts:142:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Socket.<anonymous> (/Users/daniilmotsenyat/code/textapp/server/src/services/socketService.ts:121:34)
+Message from me-id to user3: whats up?
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 2 historical messages to me-id.
+Sent 2 historical messages to me-id.
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+User me-id joined their room.
+User me-id joined chat room: me-me-id
+Sent 3 historical messages to me-id.
+Sent 3 historical messages to me-id.
+Message from me-id to user3: this house is mine
+Translation Error: Error: Failed to get valid text from AI response
+    at translate (/Users/daniilmotsenyat/code/textapp/server/src/services/translationService.ts:142:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Socket.<anonymous> (/Users/daniilmotsenyat/code/textapp/server/src/services/socketService.ts:121:34)
+Message from me-id to user3: whats up friend?
