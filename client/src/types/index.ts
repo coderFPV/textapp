@@ -20,4 +20,9 @@ export interface User {
   preferredLanguage: string;
 }
 
+export interface AuthResponse {
+  user: User;
+  token: string;
+}
+
 export type LanguageCode = 'en' | 'es' | 'fr' | 'de' | 'it' | 'pt' | 'zh' | 'ja'; // etc.

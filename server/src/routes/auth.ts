@@ -1,7 +1,8 @@
 import bcrypt from 'bcryptjs';
 import { AuthRequest, generateToken } from '../middleware/auth';
+import type { PrismaClient } from '@prisma/client';
 
-export async function registerAuthRoutes(fastify: any) {
+export async function registerAuthRoutes(fastify: any, prisma: PrismaClient) {
   // POST /auth/signup
   fastify.post<{ Body: { username: string; password: string; name: string; email: string; preferredLanguage: string } }>(
     '/auth/signup',
@@ -15,7 +16,7 @@ export async function registerAuthRoutes(fastify: any) {
         }
 
         // Check if user already exists
-        const existingUser = await fastify.prisma.user.findFirst({
+        const existingUser = await prisma.user.findFirst({
           where: {
             OR: [{ username }, { email }],
           },
@@ -29,7 +30,7 @@ export async function registerAuthRoutes(fastify: any) {
         const passwordHash = await bcrypt.hash(password, 10);
 
         // Create user
-        const user = await fastify.prisma.user.create({
+        const user = await prisma.user.create({
           data: {
             id: crypto.randomUUID(),
             username,
@@ -73,7 +74,7 @@ export async function registerAuthRoutes(fastify: any) {
         }
 
         // Find user
-        const user = await fastify.prisma.user.findUnique({
+        const user = await prisma.user.findUnique({
           where: { username },
         });
 
@@ -120,7 +121,7 @@ export async function registerAuthRoutes(fastify: any) {
         return reply.code(401).send({ error: 'Not authenticated' });
       }
 
-      const user = await fastify.prisma.user.findUnique({
+      const user = await prisma.user.findUnique({
         where: { id: request.user.id },
         select: {
           id: true,
@@ -160,7 +161,7 @@ export async function registerAuthRoutes(fastify: any) {
         if (email !== undefined) updateData.email = email;
         if (preferredLanguage !== undefined) updateData.preferredLanguage = preferredLanguage;
 
-        const user = await fastify.prisma.user.update({
+        const user = await prisma.user.update({
           where: { id: request.user.id },
           data: updateData,
           select: {

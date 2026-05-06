@@ -1,9 +1,12 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { Settings, UserCircle, Check, Save } from 'lucide-react';
+import { Settings, UserCircle, Check, Save, LogOut } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { User } from '@/types';
+import { useAuth } from '@/context/AuthContext';
+import { useRouter } from 'next/navigation';
+import { socketService } from '@/services/socketService';
 
 interface SettingsViewProps {
   onClose: () => void;
@@ -13,9 +16,17 @@ interface SettingsViewProps {
 }
 
 export function SettingsView({ onClose, currentUser, debugMode, onDebugModeChange }: SettingsViewProps) {
+  const { logout } = useAuth();
+  const router = useRouter();
   const [preferredLanguage, setPreferredLanguage] = useState<string>(currentUser?.preferredLanguage || 'en');
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
+
+  const handleLogout = () => {
+    logout();
+    socketService.disconnect();
+    router.push('/login');
+  };
 
   const LANGUAGES = [
     { value: 'en', label: 'English', flag: '🇺🇸' },
@@ -142,7 +153,7 @@ export function SettingsView({ onClose, currentUser, debugMode, onDebugModeChang
           )}
         </div>
 
-        <div className="p-6 bg-gray-50 border-t border-gray-100">
+        <div className="p-6 bg-gray-50 border-t border-gray-100 space-y-3">
           <button
             onClick={handleSave}
             disabled={saving}
@@ -164,6 +175,13 @@ export function SettingsView({ onClose, currentUser, debugMode, onDebugModeChang
                 Save Changes
               </>
             )}
+          </button>
+          <button
+            onClick={handleLogout}
+            className="w-full py-3 rounded-2xl font-semibold text-sm transition-all border border-gray-200 text-gray-600 hover:bg-red-50 hover:border-red-200 hover:text-red-600 flex items-center justify-center gap-2"
+          >
+            <LogOut size={16} />
+            Sign Out
           </button>
         </div>
       </div>

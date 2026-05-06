@@ -2,6 +2,7 @@ import Fastify, { FastifyInstance } from 'fastify';
 import cors from '@fastify/cors';
 import { Server } from 'socket.io';
 import { setupSocketHandlers } from './services/socketService';
+import { registerAuthRoutes } from './routes/auth';
 import prisma from './lib/prisma';
 import { translate } from './services/translationService';
 
@@ -379,6 +380,7 @@ async function start() {
 
     setupSocketHandlers(io);
 
+    await registerAuthRoutes(fastify, prisma);
     await registerRoutes(fastify, io);
 
     await fastify.listen({

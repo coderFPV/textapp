@@ -1,16 +1,19 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { useRouter } from 'next/navigation';
 import { ChatWindow } from '@/components/ChatWindow';
 import { SettingsView } from '@/components/SettingsView';
 import { UserCircle, Settings } from 'lucide-react';
 import { User, Message } from '@/types';
 import { socketService } from '@/services/socketService';
 import { translateMessageTo } from '@/hooks/useTranslation';
+import { useAuth } from '@/context/AuthContext';
 
 export default function HomePage() {
+  const router = useRouter();
+  const { user: authUser, token, isLoading } = useAuth();
   const [users, setUsers] = useState<User[]>([]);
-  const [me, setMe] = useState<User | null>(null);
   const [activeChatId, setActiveChatId] = useState<string | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [chatContact, setChatContact] = useState<User | null>(null);
@@ -18,25 +21,49 @@ export default function HomePage() {
   const [debugMode, setDebugMode] = useState(false);
   const [previewLanguage, setPreviewLanguage] = useState<string | null>(null);
 
+  // authUser is the current user - no need for separate 'me' state
+  const me = authUser ? {
+    id: authUser.id,
+    username: authUser.username,
+    name: authUser.name,
+    email: authUser.email,
+    preferredLanguage: authUser.preferredLanguage,
+    role: authUser.role,
+  } : null;
+
   // Compute effective language: previewLanguage overrides if set, otherwise user's actual preference
   const effectiveLanguage = previewLanguage || me?.preferredLanguage || 'en';
 
-  // Fetch all users (no role filtering)
+  // Redirect to login if not authenticated
   useEffect(() => {
-    fetchUsers();
-  }, []);
+    if (!isLoading && !authUser) {
+      router.push('/login');
+    }
+  }, [authUser, isLoading, router]);
+
+  // Update socket token when token changes
+  useEffect(() => {
+    if (token) {
+      socketService.setToken(token);
+    }
+  }, [token]);
+
+  // Fetch all users once authenticated
+  useEffect(() => {
+    if (authUser) {
+      fetchUsers();
+    }
+  }, [authUser]);
 
   async function fetchUsers() {
     try {
-      const response = await fetch('/api/users');
+      if (!token) return;
+      const response = await fetch('/api/users', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!response.ok) throw new Error('Failed to fetch users');
       const data = await response.json();
       setUsers(data);
-
-      // Find the current user (me-id from seed)
-      const meUser = data.find((u: User) => u.id === 'me-id');
-      if (meUser) {
-        setMe(meUser);
-      }
     } catch (error) {
       console.error('Failed to fetch users:', error);
     }
@@ -68,10 +95,12 @@ export default function HomePage() {
 
   const handleSettingsSaved = () => {
     // Re-fetch users to update the sidebar with new languages
-    fetch('/api/users')
-      .then(res => res.json())
-      .then(data => setUsers(data))
-      .catch(console.error);
+    if (token) {
+      fetch('/api/users', { headers: { Authorization: `Bearer ${token}` } })
+        .then(res => res.json())
+        .then(data => setUsers(data))
+        .catch(console.error);
+    }
   };
 
   const handleSendMessage = useCallback(async (text: string) => {
@@ -83,6 +112,18 @@ export default function HomePage() {
       console.error('Failed to send message:', error);
     }
   }, [me, activeChatId]);
+
+  // Show loading state while checking auth
+  if (isLoading || !authUser || !me) {
+    return (
+      <div className="h-screen flex items-center justify-center bg-[#f0f2f5]">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+          <p className="mt-4 text-gray-500">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <main className="flex h-screen bg-[#f0f2f5] overflow-hidden">
@@ -161,7 +202,7 @@ export default function HomePage() {
             <p className="px-6 text-gray-500 text-sm">No users found.</p>
           ) : (
             users
-              .filter((u) => u.id !== 'me-id')
+              .filter((u) => u.id !== me.id) // Filter out current user instead of hardcoded 'me-id'
               .map((user) => (
                 <button
                   key={user.id}

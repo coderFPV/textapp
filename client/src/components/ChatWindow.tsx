@@ -224,7 +224,6 @@ export function ChatWindow({ currentUser, activeChatId, sendMessage, debugMode, 
               receiverPreferredLanguage={previewLanguage || currentUser?.preferredLanguage}
               currentUserPreferredLanguage={currentUser?.preferredLanguage}
               debugMode={debugMode}
-              previewLanguage={previewLanguage}
               onMessageUpdated={(updatedMsg) => {
                 setMessages(prev =>
                   prev.map(m => (m.id === updatedMsg.id ? updatedMsg : m)),

@@ -5,11 +5,20 @@ const SOCKET_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
 
 class SocketService {
   private socket: Socket | null = null;
+  private token: string | null = null;
   private messageListeners: Set<(message: Message) => void> = new Set();
   private messageUpdatedListeners: Set<(message: Message) => void> = new Set();
   private connectPromise: Promise<void> | null = null;
 
-  connect(): Promise<void> {
+  setToken(token: string): void {
+    this.token = token;
+  }
+
+  getToken(): string | null {
+    return this.token;
+  }
+
+  connect(userId?: string): Promise<void> {
     if (this.socket?.connected) return Promise.resolve();
     if (this.connectPromise) return this.connectPromise;
 
@@ -18,6 +27,7 @@ class SocketService {
         reconnection: true,
         reconnectionAttempts: 5,
         reconnectionDelay: 1000,
+        auth: this.token ? { token: this.token } : undefined,
       });
 
       this.socket.on('connect', () => {
@@ -132,7 +142,10 @@ class SocketService {
         `${apiUrl}/api/messages/${encodeURIComponent(messageId)}/translate`,
         {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            ...(this.token ? { Authorization: `Bearer ${this.token}` } : {}),
+          },
           body: JSON.stringify({ targetLanguage, senderLanguage }),
         },
       );

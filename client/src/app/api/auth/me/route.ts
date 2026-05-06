@@ -2,10 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3001';
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
-) {
+// GET /api/auth/me
+export async function GET(request: NextRequest) {
   const token = request.headers.get('authorization')?.replace('Bearer ', '');
 
   if (!token) {
@@ -13,27 +11,26 @@ export async function GET(
   }
 
   try {
-    const { id } = await params;
-    const response = await fetch(`${SERVER_URL}/api/users/${id}`, {
-      headers: { Authorization: `Bearer ${token}` },
+    const response = await fetch(`${SERVER_URL}/auth/me`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
     });
 
     if (!response.ok) {
-      return NextResponse.json({ error: 'Failed to fetch user' }, { status: 500 });
+      return NextResponse.json({ error: 'Not authenticated' }, { status: 401 });
     }
 
     const user = await response.json();
     return NextResponse.json(user);
   } catch (error) {
-    console.error('User API error:', error);
+    console.error('Auth API error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
 
-export async function PUT(
-  request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
-) {
+// GET /api/users — fetches all users from backend
+export async function GETUsers(request: NextRequest) {
   const token = request.headers.get('authorization')?.replace('Bearer ', '');
 
   if (!token) {
@@ -41,26 +38,20 @@ export async function PUT(
   }
 
   try {
-    const { id } = await params;
-    const body = await request.json();
-
-    const response = await fetch(`${SERVER_URL}/api/users/${id}`, {
-      method: 'PUT',
+    const response = await fetch(`${SERVER_URL}/api/users`, {
       headers: {
         Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
-      return NextResponse.json({ error: 'Failed to update user' }, { status: 500 });
+      return NextResponse.json({ error: 'Failed to fetch users' }, { status: 500 });
     }
 
-    const user = await response.json();
-    return NextResponse.json(user);
+    const users = await response.json();
+    return NextResponse.json(users);
   } catch (error) {
-    console.error('User PUT error:', error);
+    console.error('Users API error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
